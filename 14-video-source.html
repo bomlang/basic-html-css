@@ -1,1 +1,29 @@
-<!-- HTML 코드를 작성해 주세요. -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>비디오와 소스요소</title>
+  </head>
+  <body>
+    <figure>
+      <!-- controls 논리속성 -->
+      <!-- autoplay를 써도 크롬에서 접근성측면을 위해서 재생안되게 막아놨다. -->
+      <!-- muted를 같이 넣어주면 재생은 된다. 다만 음소거기능이라 소리는 나오지않는다. -->
+      <video class="fullsize" poster="video/poster.jpg" controls>
+        <source src="video/google-developer-stories.mp4" type="video/mov" />
+        <source src="video/google-developer-stories.mov" type="video/mov" />
+        <source src="video/google-developer-stories.ogg" type="video/mov" />
+        <source src="video/google-developer-stories.webm" type="video/mov" />
+        <track
+          src="video/google-developer-stories-subtitles-en.vtt"
+          kind="captions"
+          srclang="en"
+          label="English Caption"
+        />
+      </video>
+      <figcaption>구글 개발자 이야기</figcaption>
+    </figure>
+  </body>
+</html>
