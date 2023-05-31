@@ -1,1 +1,33 @@
-<!-- HTML 코드를 작성해 주세요. -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <picture>
+      <!-- source코드는 생략 가능함. -->
+      <source srcset="images/netflix.svg" type="image/svg" />
+      <!-- srcset는 픽셀따라 보여주는 이미지를 설정하는 attribute(요소) -->
+      <img
+        src="images/netflix.png"
+        srcset="images/netflix@1x.webp 1x, images/netflix@2x.webp 2x"
+        alt="넷플릭스"
+      />
+    </picture>
+
+    <picture>
+      <source media="(min-width: 650px)"
+      srcset="https://googlechrome.github.io/samples/picture-element/images/kitten-large.png%22%3E
+      <source media="(min-width: 465px)"
+      srcset="https://googlechrome.github.io/samples/picture-element/images/kitten-medium.png%22%3E
+      <!-- img tag for browsers that do not support picture element -->
+      <img
+        src="https://googlechrome.github.io/samples/picture-element/images/kitten-small.png"
+        alt="a cute kitten"
+      />
+    </picture>
+  </body>
+</html>
