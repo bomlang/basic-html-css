@@ -1,1 +1,25 @@
-<!-- HTML 코드를 작성해 주세요. -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form 관련 요소</title>
+  </head>
+  <body>
+    <h1>폼 관련 요소</h1>
+    <form action="server URL" method="GET">
+      <!-- XHTML에서는 fieldset과 legend를 넣어 명시해줘야 했음. -->
+      <fieldset>
+        <legend>검색</legend>
+        <div>
+          <!-- for과 id를 명시적인 방식으로 연결함. (호환성이 좋아짐)) -->
+          <!-- label은 반드시 들어가야한다. -->
+          <label for="search">자료검색</label>
+          <input id="search" type="search" />
+        </div>
+      </fieldset>
+    </form>
+    <button type="submit" form="searchForm">검색</button>
+  </body>
+</html>
