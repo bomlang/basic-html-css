@@ -1,1 +1,31 @@
-/* CSS 선택자(Selector) */
+/* 원래 상속값 < 본인이 가진 고유 값 */
+/* 전체선택자를 사용하여, 상속받은 값을 우선시하게 바꾼다. */
+/* 예를들어 a태그 고유색을 상속값으로 변경이 가능하다. */
+* {
+  color: inherit;
+}
+
+/* a는 투명도 alpha 값 */
+/* tomato 또는 aqua 처럼 직접 명시해주는 방법 */
+
+body {
+  font-family: "SUIT";
+  font-weight: 300;
+  background-color: tomato;
+  color: hsla(90, 30%, 50%, 0.5);
+  margin: 0;
+}
+
+.fancy {
+  font-weight: bold;
+  text-shadow: 4px 4px 3px #77f;
+}
+
+ul.menu {
+  margin: 0;
+  padding-left: 0;
+}
+
+#demo {
+  border: red 2px solid;
+}
