@@ -29,3 +29,103 @@ ul.menu {
 #demo {
   border: red 2px solid;
 }
+
+/* 속성 선택자 */
+.menu a[href$=".pdf"] {
+  font-weight: 700;
+}
+
+/* 다중 선택 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+/* 가상요소 선택자 >> ::두개가 붙어있음. */
+/* 붙여서 적어야 기능이 작동한다. */
+.align::before,
+::after {
+  content: "가상 요소";
+}
+
+::selection {
+  background: #373e6a;
+  color: #fff;
+}
+
+/* 가상클래스 */
+
+/* 변수선언함 */
+:root {
+  --primary-color: #373e6a;
+  --secondary-color: #ccc;
+  --base-color: #fff;
+}
+
+button:hover {
+  background: var(--primary-color);
+  color: var(--base-color);
+}
+
+a:focus {
+  outline-offset: 4px;
+  outline: 2px solid var(--primary-color);
+}
+
+form:focus-within {
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+}
+
+input:focus {
+  outline: 0;
+}
+
+/* 웹 접근성과 관련이 많다. */
+button:focus-visible {
+  outline: none;
+  box-shadow: 1px 1px 5px var(--primary-color);
+}
+
+/* 비활성화 */
+input:disabled {
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  color: --secondary-color;
+  cursor: not-allowed;
+}
+
+input:checked {
+  border: 0;
+  outline: 2px solid var(--primary-color);
+}
+
+/* 값이 트루값일때 */
+input:valid {
+  background: url("../assets/images/checked.svg") no-repeat 100% 0 / 16px 16px;
+  padding-right: 36px;
+}
+
+/* 값이 폴스일때 */
+/* 아이디값을 이메일방식으로 써달라는 오류메시지를 보내주거나 할때 JS말고 CSS를 이용해서 가능하다. */
+input:invalid {
+  background: url("../assets/images/warning.svg") no-repeat 100% 0 / 16px 16px;
+  padding-right: 36px;
+}
+
+li:first-child {
+  margin-top: 16px 0 0 0;
+}
+
+/* n+2 말고 odd같은 홀수만 선택도 가능하다.  */
+li:nth-child(n + 2) {
+  margin: 8px 0;
+}
+
+li:last-child {
+  margin-top: 0 0 16px 0;
+}
