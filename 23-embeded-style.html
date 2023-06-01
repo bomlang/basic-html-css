@@ -1,1 +1,26 @@
-<!-- HTML 코드를 작성해 주세요. -->
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>내부 스타일 시트(Embedded Style Sheet)</title>
+    <!-- embadded 방식은 html문서를 읽으면서 style을 계속 불러와 작업하기때문에 성능적으로 external보다 떨어진다. -->
+    <!-- 반면 external 방식은 css파일을 캐싱하기때문에 한번만 다운받으면 성능적으로 embadded보다 좋다. -->
+    <style>
+      body {
+        margin: 40px;
+        background: #000;
+        color: #fff;
+      }
+      p {
+        text-shadow: 1px 1px 0 #ff0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>내부 스타일 시트(Embedded Style Sheet)</h1>
+    <p>
+      &lt;style&gt; 요소 내에 직접 CSS 코드를 작성하여 HTML 문서에 스타일을
+      적용합니다.
+    </p>
+  </body>
+</html>
