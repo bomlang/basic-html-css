@@ -12,3 +12,20 @@ ul {
   background-size: 100px 100px, 450px 150px, 350px 600px;
   background-position: 250px 0, 200px 0, 0 0;
 }
+
+html {
+  font-size: 0.625em;
+}
+
+body {
+  font-size: 1.5rem;
+
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* 1.5는 30px의 값을 가진다. */
+p {
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 500;
+}
